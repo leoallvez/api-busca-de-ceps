@@ -14,3 +14,10 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+/**
+ * Routes for resource cep-controller
+ */
+
+$app->get('buscar/{cep}', 'CepsController@buscar');
+
