@@ -11,13 +11,8 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
-});
-
 /**
  * Routes for resource cep-controller
  */
-
-$app->get('buscar/{cep}', 'CepsController@buscar');
+$app->get('api/v1/buscar/{cep}', 'CepsController@buscar');
 
